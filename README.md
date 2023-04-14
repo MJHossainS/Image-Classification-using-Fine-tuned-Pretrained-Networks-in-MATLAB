@@ -46,7 +46,6 @@ Example folder structure:
 ## Data Preparation
 The prepareData function creates image datastores for the training, validation, and test data. It also applies data augmentation on the fly during training to improve the model's performance.
 
-Usage:
 ```matlab
 [trainDatastore, validationDatastore, testDatastore] = prepareData(train_folder, validation_folder, test_folder);
 ```
@@ -57,7 +56,6 @@ The following functions train a deep learning model using ResNet-50, VGG-19, and
 - trainVGG19
 - trainVGG16
 
-Usage:
 ```matlab
 [resNet50Model, resNet50Info] = trainResNet50(trainDatastore, validationDatastore);
 [vgg19Model, vgg19Info] = trainVGG19(trainDatastore, validationDatastore);
@@ -66,7 +64,6 @@ Usage:
 ## Evaluation
 The evaluate function calculates accuracy, precision, recall, and F1-score for a trained model on the test dataset.
 
-Usage:
 ```matlab
 [resNet50Acc, resNet50Prec, resNet50Recall, resNet50F1] = evaluate(resNet50Model, testDatastore);
 [vgg19Acc, vgg19Prec, vgg19Recall, vgg19F1] = evaluate(vgg19Model, testDatastore);
