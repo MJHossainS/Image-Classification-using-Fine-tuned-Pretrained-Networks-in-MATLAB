@@ -57,22 +57,26 @@ The following functions train a deep learning model using ResNet-50, VGG-19, and
 2. trainVGG19
 3. trainVGG16
 Usage:
+```matlab
 [resNet50Model, resNet50Info] = trainResNet50(trainDatastore, validationDatastore);
 [vgg19Model, vgg19Info] = trainVGG19(trainDatastore, validationDatastore);
 [vgg16Model, vgg16Info] = trainVGG16(trainDatastore, validationDatastore);
-
+```
 ## Evaluation
 The evaluate function calculates accuracy, precision, recall, and F1-score for a trained model on the test dataset.
 
 Usage:
+```matlab
 [resNet50Acc, resNet50Prec, resNet50Recall, resNet50F1] = evaluate(resNet50Model, testDatastore);
 [vgg19Acc, vgg19Prec, vgg19Recall, vgg19F1] = evaluate(vgg19Model, testDatastore);
 [vgg16Acc, vgg16Prec, vgg16Recall, vgg16F1] = evaluate(vgg16Model, testDatastore);
-
+```
 ## Performance Visualization
 The plotPerformance function plots the training accuracy, training loss, validation accuracy, and validation loss for a trained model.
 
 Usage:
+```matlab
 plotPerformance(resNet50Info);
 plotPerformance(vgg19Info);
 plotPerformance(vgg16Info);
+```
