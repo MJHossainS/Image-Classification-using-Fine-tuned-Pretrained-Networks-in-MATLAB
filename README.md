@@ -47,9 +47,9 @@ Example folder structure:
 The prepareData function creates image datastores for the training, validation, and test data. It also applies data augmentation on the fly during training to improve the model's performance.
 
 Usage:
-
+```matlab
 [trainDatastore, validationDatastore, testDatastore] = prepareData(train_folder, validation_folder, test_folder);
-
+```
 ## Training Models
 The following functions train a deep learning model using ResNet-50, VGG-19, and VGG-16 as pre-trained networks:
 
