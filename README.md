@@ -8,7 +8,7 @@ Clone this repository to your local machine and make sure you have MATLAB with D
 Organize your dataset into three separate folders: train, val, and test. Each folder should contain subfolders representing different classes, and the images should be placed within their respective class subfolders.
 
 Example folder structure:
-
+'''
 /MATLAB Drive/train/
     /class1/
         img1.jpg
@@ -42,7 +42,7 @@ Example folder structure:
         ...
     ...
 
-
+'''
 ## Data Preparation
 The prepareData function creates image datastores for the training, validation, and test data. It also applies data augmentation on the fly during training to improve the model's performance.
 
