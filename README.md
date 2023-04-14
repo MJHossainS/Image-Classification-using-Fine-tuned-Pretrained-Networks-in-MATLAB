@@ -53,9 +53,9 @@ Usage:
 ## Training Models
 The following functions train a deep learning model using ResNet-50, VGG-19, and VGG-16 as pre-trained networks:
 
-1. trainResNet50
-2. trainVGG19
-3. trainVGG16
+- trainResNet50
+- trainVGG19
+- trainVGG16
 Usage:
 ```matlab
 [resNet50Model, resNet50Info] = trainResNet50(trainDatastore, validationDatastore);
